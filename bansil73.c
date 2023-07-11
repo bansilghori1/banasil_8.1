@@ -26,53 +26,34 @@ Array C is: 8, 7, 10, 12, 5
 
 void main (){
 
-int i,n,m,sum=0,p;
+int i,n;
 
-printf("enter array A's size =  ");
+printf("enter array size =  ");
 scanf("%d",&n);
+int a[n];
 
-int count[n];
-
+printf("enter a elemets \n");
 for(i=0;i<n;i++){
-    printf("n[%d]= ",i);
-    scanf("%d",&count[n]);
-    
-}
-printf("enter array B's size =  ");
-scanf("%d",&m);
+    printf("A[%d]= ",i);
+    scanf("%d",&a[i]);
+    }
 
-int marks[m];
+int b[n];
 
+printf("enter b elemets\n");
 for(i=0;i<n;i++){
-    printf("n[%d]= ",i);
-    scanf("%d",&marks[m]);
+    printf("B[%d]= ",i);
+    scanf("%d",&b[i]);
+    }
+
+int c[n];    
+for(i=0;i<n;i++){
+
+c[i] =a[i] + b[i];
 
 }
-
-int c[p];
-for(i=0;i<n;i++)
-{
-    c[i]=count[i]+marks[i];
-    printf("%d\n",c[i]);
+for(i=0;i<n;i++){
+printf(" array c is  c[%d]=%d\n",i,c[i]);
 
 }
-
-/*for(i=0;i<=n;i++)
-{
-        printf("c[%d]=%d",i,c[i]);
-}*/
-
-    
-
-
-
-
-
-
-
-
-
-
-
-getch();
 }
